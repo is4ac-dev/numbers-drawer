@@ -25,17 +25,50 @@
 
     <ul id="explain-section"> 
       <li>
-        <img src="assets/img/question.svg" alt="Ícone de questionamento">
+        <img src="assets/img/question.svg" alt="">
         <h3>Como funciona o sorteador de números?</h3>
         <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
       </li>
 
       <li>
-        <img src="assets/img/question.svg" alt="Ícone de questionamento">
+        <img src="assets/img/question.svg" alt="">
         <h3>Posso escolher o intervalo dos números?</h3>
         <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
       </li>
     </ul>
+
+    <form>
+
+      <header>
+        <h2>Quero Sortear:</h2>
+        <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+      </header>
+
+      <section id="input-section">
+
+        <ul id="input-buttons">
+          <li>
+            <label for="quantity">Números</label>
+            <input type="number" id="quantity">
+          </li>
+          <li>
+            <label for="min-range">De</label>
+            <input type="number" id="min-range">
+          </li>
+          <li>
+            <label for="max-range">Até</label>
+            <input type="number" id="max-range">
+          </li>
+        </ul>
+
+        <div id="toggle-wrapper">
+          <img src="assets/img/ellipse.svg" alt="">
+          <input type="checkbox" id="toggle-switch">
+          <label for="toggle-switch">Não repetir número</label>
+        </div>
+        
+      </section>
+    </form>
     
   </div>
 
