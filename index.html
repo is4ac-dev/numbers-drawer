@@ -11,7 +11,7 @@
 
   <div id="container">
     
-    <header>
+    <header id="main-header">
       <img src="assets/img/logo.svg" alt="Logo da Numbers">
     </header>
 
@@ -37,9 +37,9 @@
       </li>
     </ul>
 
-    <form>
+    <form class="aside-container">
 
-      <header>
+      <header class="aside-header">
         <h2>Quero Sortear:</h2>
         <p>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
       </header>
@@ -66,9 +66,29 @@
           <input type="checkbox" id="toggle-switch">
           <label for="toggle-switch">Não repetir número</label>
         </div>
-        
+
       </section>
+
+      <button type="submit" class="main-button">
+        <span>Sortear</span> <img src="assets/img/right-arrow.svg" alt="">
+      </button>
+
     </form>
+
+    <aside id="results-section" class="aside-container">
+
+      <header class="other-header">
+        <h2>Resultado do Sorteio</h2>
+        <p>1° Resultado</p>
+      </header>
+
+      <ul id="results-list"></ul>
+
+      <button class="main-button">
+        <span>Sortear Novamente</span> <img src="assets/img/repeat.svg" alt="">
+      </button>
+      
+    </aside>
     
   </div>
 
