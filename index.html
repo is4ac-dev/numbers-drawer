@@ -45,7 +45,7 @@
       </li>
     </ul>
 
-    <form class="aside-container">
+    <form id="form-container">
 
       <header class="aside-header">
         <h2>Quero Sortear:</h2>
@@ -70,20 +70,22 @@
         </ul>
 
         <div id="toggle-wrapper">
-          <img src="assets/img/ellipse.svg" alt="">
-          <input type="checkbox" id="toggle-switch">
+          <span>
+            <img src="assets/img/ellipse.svg" alt="">
+            <input type="checkbox" id="toggle-switch">
+          </span>
           <label for="toggle-switch">Não repetir número</label>
         </div>
 
       </section>
 
       <button type="submit" class="main-button">
-        <span>Sortear</span> <img src="assets/img/right-arrow.svg" alt="">
+        Sortear<img src="assets/img/right-arrow.svg" alt="">
       </button>
 
     </form>
 
-    <aside class="aside-container" hidden>
+    <aside id="aside-container" hidden>
 
       <header class="other-header">
         <h2>Resultado do Sorteio</h2>
