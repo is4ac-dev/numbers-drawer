@@ -40,3 +40,27 @@
   --label-md: 700 1.25rem/150% "Roboto Flex", sans-serif;
   --label-sm: 700 1rem/150% "Roboto Flex", sans-serif;
 }
+
+#container {
+  display: grid;
+  grid-template-areas: 
+  "MH MH"
+  "MT AC"
+  "ES AC";
+
+  gap: 3rem 10rem;
+
+  padding: 3rem 6rem;
+}
+
+#main-header {
+  grid-area: MH;
+}
+
+#explain-section {
+  grid-area: ES;
+}
+
+.aside-container {
+  grid-area: AC;
+}
