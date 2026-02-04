@@ -1,0 +1,46 @@
+#main-title {
+  display: flex;
+  flex-direction: column-reverse;
+
+  h1 {
+    font: var(--display-lg);
+    color: var(--content-primary);
+
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font: var(--overline);
+    color: var(--content-primary);
+
+    text-transform: uppercase;
+  }
+}
+
+#explain-section{
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+
+  li {
+    display: flex;
+
+    gap: 0.5rem;
+
+    img {
+      align-self: flex-start;
+    }
+
+    h3 {
+      font: var(parag-md);
+      color: var(--content-brand);
+    }
+
+    p {
+      font: var(--parag-sm);
+      color: var(--content-secondary);
+    }
+  }
+}

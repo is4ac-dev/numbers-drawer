@@ -41,12 +41,18 @@
   --label-sm: 700 1rem/150% "Roboto Flex", sans-serif;
 }
 
+body {
+  background-color: var(--background-primary);
+}
+
 #container {
   display: grid;
   grid-template-areas: 
   "MH MH"
   "MT AC"
   "ES AC";
+
+  grid-template-columns: 1fr 2fr;
 
   gap: 3rem 10rem;
 
