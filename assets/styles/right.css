@@ -85,6 +85,8 @@
     align-items: center;
     background-color: var(--content-tertiary);
 
+    cursor: pointer;
+
     width: 2.5rem;
     height: 1.5rem;
 
@@ -119,6 +121,8 @@ button {
 
   display: flex;
   justify-content: center;
+
+  cursor: pointer;
 
   gap: 0.5rem;
 
