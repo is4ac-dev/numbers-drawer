@@ -70,3 +70,7 @@ body {
 #aside-container {
   grid-area: AC;
 }
+
+.container-hidden {
+  display: none !important;
+}

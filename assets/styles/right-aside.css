@@ -1,13 +1,17 @@
-.result-hidden {
-  display: none !important;
-}
-
 #aside-container {
   display: flex;
   flex-direction: column;
 
   gap: 2rem;
   height: 100%;
+
+  text-align: center;
+
+  header {
+    p {
+      text-transform: uppercase;
+    }
+  }
 }
 
 #results-list {
