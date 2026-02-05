@@ -9,5 +9,12 @@ form.addEventListener("submit", (event) => {
 
   const checked = document.getElementById("toggle-switch").checked
 
-  console.log(quantity, min, max, checked)
+  if(min > max){
+    console.log("Erro de intervalo")
+  }else if(checked && quantity > (max - min + 1)){
+    console.log("Erro de quantidade")
+  }else{
+    console.log("sorteando números")
+  }
+
 })
