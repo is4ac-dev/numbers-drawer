@@ -1,7 +1,9 @@
 const form = document.getElementById("form-container")
 const aside = document.getElementById("aside-container")
 
-const button = document.getElementById("btn-button")
+const button = document.getElementById("btn-again")
+
+const list = document.getElementById("results-list")
 
 form.addEventListener("submit", (event) => {
   event.preventDefault()
@@ -21,6 +23,14 @@ form.addEventListener("submit", (event) => {
     
     showResults(numbers)
   }
+})
+
+button.addEventListener("click", (event) => {
+  event.preventDefault()
+
+  form.classList.remove("container-hidden")
+
+  aside.classList.add("container-hidden")
 })
 
 function getRandomNumber(quantity, min, max, noRepeat){
@@ -48,4 +58,15 @@ function showResults(array){
   form.classList.add("container-hidden")
 
   aside.classList.remove("container-hidden")
+
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+    const listItem = document.createElement("li")
+
+    listItem.textContent = element
+    listItem.classList.add("result-item")
+
+    list.append(listItem)
+  }
 }
