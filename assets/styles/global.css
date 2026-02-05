@@ -67,6 +67,6 @@ body {
   grid-area: ES;
 }
 
-.aside-container {
+#aside-container {
   grid-area: AC;
 }

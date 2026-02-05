@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column-reverse;
 
+  grid-area: MT;
+
   h1 {
     font: var(--display-lg);
     color: var(--content-primary);
@@ -34,7 +36,7 @@
     }
 
     h3 {
-      font: var(parag-md);
+      font: var(--parag-md);
       color: var(--content-brand);
     }
 
