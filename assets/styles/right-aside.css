@@ -1,0 +1,44 @@
+.result-hidden {
+  display: none !important;
+}
+
+#aside-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  height: 100%;
+}
+
+#results-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+
+  justify-content: center;
+  align-items: center;
+
+  min-height: 10rem;
+}
+
+.result-item {
+  font: var(--display-md);
+  color: var(--content-brand);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--background-secondary);
+  border-radius: 50%;
+
+  animation: popIn 300ms ease-out forwards;
+}
+
+@keyframes popIn {
+  from { transform: scale(0); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
