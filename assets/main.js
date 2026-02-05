@@ -15,9 +15,9 @@ form.addEventListener("submit", (event) => {
   const checked = document.getElementById("toggle-switch").checked
 
   if(min > max){
-    console.log("Erro de intervalo")
+    alert("O número 'Até' deve ser maior que o 'De'.")
   }else if(checked && quantity > (max - min + 1)){
-    console.log("Erro de quantidade")
+    alert("Não existem números suficientes neste intervalo para não repetir.")
   }else{
     let numbers = getRandomNumber(quantity, min, max, checked)
     
@@ -58,6 +58,8 @@ function showResults(array){
   form.classList.add("container-hidden")
 
   aside.classList.remove("container-hidden")
+
+  list.innerHTML = ""
 
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
