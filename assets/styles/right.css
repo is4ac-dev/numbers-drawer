@@ -90,14 +90,12 @@
 
     border-radius: 1rem;
 
-    transition: background 1000ms;
-
     input {
       display: none;
     }
 
     img {
-      transition: transform 300ms;
+      transition: transform 400ms ease;
     }
 
     
